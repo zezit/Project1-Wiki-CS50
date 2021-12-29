@@ -1,0 +1,25 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit Page
+{% endblock %}
+
+{% block body %}
+    <h1>You're editing <b id="destaq">{{entry}}</b>'s page.</h1>
+
+    <div class="formG">
+        <form action="{% url 'save_edit' %}" method="POST">
+            {% csrf_token %}
+            <div hidden>
+            <label>Title:</label>
+            <input class="inputs" type="text" name="title" id="title" required value="{{entry}}">
+            </div>
+            <div>
+            <label>Text area:</label>
+            <textarea class="inputs" name="body" id="body" rows="5">{{bodyEntry}}</textarea>
+            </div>
+            <button id="button-add" type="submit">Save</button>
+        </form>
+    </div>
+
+{% endblock %}

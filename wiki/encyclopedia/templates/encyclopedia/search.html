@@ -1,0 +1,23 @@
+{% extends "encyclopedia/layout.html" %} 
+
+{% block title %} 
+    Search 
+{% endblock %}
+
+{% block body %}
+    <h1>Here is what we found:</h1>
+
+    <ul>
+        {% for n in entry %}
+        <li><a href="/wiki/{{ n }}">{{ n }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <div id="options">
+        <h2>Here are some options for you:</h2>
+        <div id="buttons">
+            <a>Create new page</a>
+            <a>Back to Home page</a>
+        </div>
+    </div>
+{% endblock %}

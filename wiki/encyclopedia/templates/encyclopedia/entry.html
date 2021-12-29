@@ -1,0 +1,10 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{page_title}}
+{% endblock %}
+
+{% block body %}
+        {{entry|safe}}
+        <a id="edit_page" href="/{{page_title}}/editPage">Edit page</a>
+{% endblock %}

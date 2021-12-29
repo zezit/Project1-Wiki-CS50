@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1>Non-existent page</h1>
+    <p>The {{page_title}}'s page that you're trying to find does not exist yet.</p>
+
+    <div id="options">
+        <h2>Here are some options for you:</h2>
+        <div id="buttons">
+            <a>Create new page</a>
+            <a href="{% url 'index' %}">Back to Home page</a>
+        </div>
+    </div>
+{% endblock %}

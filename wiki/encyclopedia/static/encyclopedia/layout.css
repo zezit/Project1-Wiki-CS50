@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+
+code {
+  white-space: pre;
+}
+
+h1 {
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+#destaq {
+  color: blue;
+}
+
+textarea {
+  height: 90vh;
+  width: 80%;
+}
+
+.main {
+  padding: 10px;
+}
+
+.search {
+  width: 100%;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 5px;
+}
+
+#options #buttons {
+  color: rgb(0, 119, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+  text-decoration: underline;
+}
+
+#options #buttons a {
+  cursor: pointer;
+}
+
+#options #buttons a:hover {
+  color: rgb(27, 18, 153);
+}
+
+.formG {
+  display: flex;
+  align-items: center;
+}
+.formG form {
+  position: relative;
+}
+.formG .inputs {
+  width: 100%;
+  margin-left: 10px;
+  border: 0.5px solid rgb(0, 119, 255);
+}
+.formG #body {
+  width: 700px;
+  height: 300px;
+  resize: none;
+  box-sizing: border-box;
+}
+.formG #title {
+  margin-left: 16px;
+}
+.formG div {
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+.formG #button-add {
+  position: absolute;
+  right: 0;
+  border: 0.5px solid #615d5d;
+  border-radius: 5%;
+  color: #f0f0f0;
+  background: rgb(0, 119, 255);
+  padding: auto 5px;
+  margin-top: 7px;
+}
+.formG #button-add:hover {
+  background: rgb(90, 159, 238);
+  color: white;
+  border: 0.5px solid #ffffff;
+}
